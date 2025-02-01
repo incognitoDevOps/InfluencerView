@@ -21,8 +21,6 @@ export default function Home() {
       width={600}
       height={350}
     />
-  );
-}
 
     </div>
   );
