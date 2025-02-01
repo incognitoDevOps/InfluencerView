@@ -12,7 +12,7 @@ export default function Home() {
         { data: [2, 8, 1, 3, 1], stack: 'A', label: 'Series A2' },
         { data: [14, 6, 5, 8, 9], label: 'Series B1' },
       ]}
-      barLabel={(item: { value: { toString: () => any; }; }, context: { bar: { height: number; }; }) => {
+      barLabel={(item, context) => {
         if ((item.value ?? 0) > 10) {
           return 'High';
         }
@@ -21,6 +21,8 @@ export default function Home() {
       width={600}
       height={350}
     />
+  );
+}
 
     </div>
   );
